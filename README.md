@@ -1,4 +1,4 @@
-## BELLABEAT-CASESTUDY
+## 🌿BELLABEAT-CASESTUDY 
 Analyzing Fitbit smart device usage data (activity, sleep, and calories) to uncover consumer trends and provide data-driven marketing recommendations for Bellabeat.
 
 
@@ -54,7 +54,7 @@ To ensure data quality and integrity, the raw Fitbit data was evaluated using th
 
   **Business Task**
 
-  Bellabeat wants to explore how smart device data from non-Bellabeat users can reveal trends in **physical activity**, **calorie burn**, and **sleep** that may provide data-driven recommendations to better support the unique health and wellness journeys of our customers.
+  Bellabeat wants to explore how smart device data from non-Bellabeat users can reveal trends in **physical activity**, **calories burn**, and **sleep** that may provide data-driven recommendations to better support the unique health and wellness journeys of our customers.
 
   
 
