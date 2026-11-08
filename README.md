@@ -45,27 +45,22 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 
 
+
+
+
+
+
+
 👥 Stakeholders
 
-Bellabeat executive leadership.
 
-Bellabeat marketing team.
+- Bellabeat executive team.
 
-Product development team.
+- Bellabeat marketing analytics team.
 
-Customer engagement and digital wellness teams.
+- Product development team.
 
-
-
-
-
-
-
-
-
-
-
-Analyzing Fitbit smart device usage data (activity, sleep, and calories) to uncover consumer trends and provide data-driven marketing recommendations for Bellabeat.
+- Customer engagement and digital wellness teams.
 
 
 
