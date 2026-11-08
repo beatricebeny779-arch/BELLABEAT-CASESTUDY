@@ -18,6 +18,7 @@ This project uses publicly available data collected from 30 Fitbit users via an 
 - Granularity: Second, minute, hourly, and daily-level data across 29 CSV files.
 
 - License: [CCO: Public Domain](https://www.kaggle.com/arashnic) through Mobius.
+  
 
 
 How is this data useful?
