@@ -1,4 +1,68 @@
 ## 🌿BELLABEAT-CASESTUDY 
+
+**Google Data Analytics Professional Certificate: Capstone Project**
+
+**Author:** Beatrice Benson
+
+**Tools:** Google BigQuery, SQL, Microsoft Excel, Power Query and GitHub
+
+---
+
+This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, **Act**.
+
+
+
+❓ **1. Ask**
+
+🏢 **Business Scenario**
+
+Bellabeat is a health-focused technology company that develops smart wellness products designed to help individuals monitor and improve aspects of their health and daily activities.
+
+As the company seeks to expand its market presence, its leadership team wants to understand how consumers use smart fitness devices. These insights could help Bellabeat improve its marketing strategies, strengthen customer engagement and identify opportunities for product positioning.
+
+The company has therefore tasked its marketing analytics team with examining existing smart-device usage data to identify behavioural trends and develop actionable business recommendations.
+
+
+🎯 **Business Task**
+
+Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routines** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
+
+
+
+
+❔ Key Business Questions
+
+1. What are some trends in smart device usage?
+   
+2. How could these trends apply to Bellabeat customers?
+ 
+3. How could these trends help influence Bellabeat marketing strategy?  
+
+
+
+
+
+
+👥 Stakeholders
+
+Bellabeat executive leadership.
+
+Bellabeat marketing team.
+
+Product development team.
+
+Customer engagement and digital wellness teams.
+
+
+
+
+
+
+
+
+
+
+
 Analyzing Fitbit smart device usage data (activity, sleep, and calories) to uncover consumer trends and provide data-driven marketing recommendations for Bellabeat.
 
 
