@@ -24,7 +24,7 @@ The company has therefore tasked its marketing analytics team with examining exi
 
 🎯 **Business Task**
 
-Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routines** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
+Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routinesG** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
 
 
 
