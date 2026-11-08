@@ -11,8 +11,7 @@
 This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, **Act**.
 
 
-
-## ❓**1. Ask**
+❓**1. Ask**
 
 🏢 **Business Scenario**
 
@@ -30,7 +29,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 
 
-❔ Key Business Questions
+❔ **Key Business Questions**
 
 1. What are some trends in smart device usage?
    
@@ -51,11 +50,9 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 **Secondary Stakeholder:** Bellabeat market analytics team, Customer Engagement and digital wellness teams.
 
 
+**2. Prepare**
 
-2
-
-
-## About the Dataset
+### About the Dataset
 
 This project uses publicly available data collected from 30 Fitbit users via an Amazon Mechanical Turk survey between March 12 and May 12, 2016. The dataset was made available by Mobius On Kaggle for educational and non-commercial analysis.
 
@@ -70,7 +67,26 @@ This project uses publicly available data collected from 30 Fitbit users via an 
 - Granularity: Second, minute, hourly, and daily-level data across 29 CSV files.
 
 - License: [CCO: Public Domain](https://www.kaggle.com/arashnic) through Mobius.
+
+- **Limitations:** The dataset is small (30 users), lacks demographic data (age, gender), and represents a short timeframe.
+
   
+To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist:
+
+ **Reliable:** Moderate. Data was self-reported via survey.
+ 
+ **Original:** Yes because it was collected directly from the devices.
+ 
+ **Comprehensive:** No. Missing key data like stress (which Bellabeat tracks).
+ 
+ **Current:** No. The data is from 2016.
+ 
+**Cited:** Yes. Publicly available on Kaggle.
+
+
+
+
+
 
 
 How is this data useful?
