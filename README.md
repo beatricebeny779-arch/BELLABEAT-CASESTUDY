@@ -12,7 +12,7 @@ This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, 
 
 
 
-❓ **1. Ask**
+## ❓**1. Ask**
 
 🏢 **Business Scenario**
 
@@ -43,23 +43,16 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 
 
+👥 **Stakeholders**
+
+
+**Primary Stakeholders:** Bellabeat Executive team, Product Development team.
+
+**Secondary Stakeholder:** Bellabeat market analytics team, Customer Engagement and digital wellness teams.
 
 
 
-
-
-
-👥 Stakeholders
-
-
-- Bellabeat executive team.
-
-- Bellabeat marketing analytics team.
-
-- Product development team.
-
-- Customer engagement and digital wellness teams.
-
+2
 
 
 ## About the Dataset
