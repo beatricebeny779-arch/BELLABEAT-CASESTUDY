@@ -49,8 +49,6 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 
 
-
-
 👥 Stakeholders
 
 
