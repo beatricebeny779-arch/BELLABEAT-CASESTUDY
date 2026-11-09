@@ -122,22 +122,13 @@ To ensure the merge was successful, I ran a validation query to count the total 
 SELECT COUNT(*) AS total_rows
 FROM `bellabeat_analysis.combined_activity_sleep`;
 ```
-
 Result: Successfully created a combined table with 457 rows.
 
-Where do the actual numbers (Results) go?
-They go in the Analyze phase.
-
-Here is exactly how your Analyze section should look. Copy and paste this whole block (I have filled in the numbers from your earlier screenshot so you don't have to guess):
 
 
+## 4. Analyze
 
-## 📊 4. Analyze
-
-I used Google BigQuery to run summary statistics on the combined activity and sleep dataset.
-
-### Overall Summary Statistics
-*Description: I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.*
+I used Google Big Query to run summary statistics on the combined activity and sleep dataset. I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.
 
 ```sql
 SELECT 
@@ -148,7 +139,12 @@ SELECT
   ROUND(AVG(TotalMinutesAsleep), 0) AS avg_sleep_minutes,
   ROUND(AVG(SedentaryMinutes), 0) AS avg_sedentary_minutes
 FROM `bellabeat_analysis.combined_activity_sleep`;
-Results:
+```
+
+**Results:**
+|Unique_users|avg_daily_steps|max-daily_steps|avg_daily_calories|avg_sleep_minutes|avg_sedentary_minutes|
+|------------|---------------|---------------|------------------|-----------------|---------------------|
+|    35      |     6547      |    28497      |      2189        |     444         |        995          |
 
 unique_users	avg_daily_steps	max_daily_steps	avg_daily_calories	avg_sleep_minutes	avg_sedentary_minutes
 35	6547	28497	2189	444	995
