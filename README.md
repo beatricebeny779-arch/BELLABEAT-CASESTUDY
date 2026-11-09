@@ -154,7 +154,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 
 
-## 5. SHARE 
+## 5. Share
 
 **Tools:** Tableau
 
@@ -176,7 +176,9 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 **3. Correlation between steps and sleep (top right):** There is a negative relationship between the number of steps taken and the total minutes of sleep. In this dataset, users who walked the most had less slight sleep.
 
 
-## Act
+## 6. Act
+
+Based on the findings, below are the recommendations to the Bellabeat Company.
 
 **1. Focus on sleep quality:** Bellabeat should market its app's sleep tracking rather than just promoting step goals.
    
@@ -185,7 +187,7 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 **3. Target Mid-Week Engagement:** Since Tuesday shows the lowest activity levels, Bellabeat could launch a mid-week movement challenge or to keep users engaged when their motivation dips.
 
 
-## Limitations
+## 7. Limitations
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
  **2. Lack of Demographics:** The dataset does not include age, gender, location, or income. This makes it impossible to understand the categories of each user.
@@ -195,12 +197,18 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 ---
 
-## 📝 8. Project Summary
+## 8. Project Summary
 
 This project analyzed Fitbit smart device data to uncover trends in physical activity and sleep, providing high-level marketing recommendations for Bellabeat. The data revealed that while users are tracking their health, they spend over **16 hours a day sedentary**. Additionally, there is a **negative relationship** between steps and sleep, meaning more steps did not lead to better sleep in this dataset.
 
 
 ---
+
+## Data Sources & References
+
+[Kaggle dataset](https://www.kaggle.com/datasets/arashnic/fitbit)
+
+Google Data Analytics Professional Certificate: Capstone Project
 
 
 
