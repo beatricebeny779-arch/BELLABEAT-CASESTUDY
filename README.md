@@ -51,21 +51,44 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 ### About the Dataset
 
+
 This project uses publicly available data collected from 30 Fitbit users via an Amazon Mechanical Turk survey between March 12 and May 12, 2016. The dataset was made available by Mobius On Kaggle for educational and non-commercial analysis.
 
 - Source: [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) on Kaggle.
 
-- Participants: 30 Fitbit users (as reported by source; up to 35 IDs were found during processing).
-
-- Date Range: March 12 - May 12, 2016
-
-- Data collected: Personal tracker data including physical activity, heartrate and sleep monitoring.
-
-- Granularity: Second, minute, hourly, and daily-level data across 29 CSV files.
-
 - License: [CCO: Public Domain](https://www.kaggle.com/arashnic) through Mobius.
 
 - **Limitations:** The dataset is small (30 users), lacks demographic data (age, gender), and represents a short timeframe.
+
+**ROCCC Assessment**
+To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist:
+*   **Reliable:** Moderate. Data was self-reported via survey.
+*   **Original:** Yes. It was collected directly from the devices.
+*   **Comprehensive:** No. Missing key data like stress data (which Bellabeat tracks).
+*   **Current:** No. The data is from 2016.
+*   **Cited:** Yes. Publicly available on Kaggle.
+
+**How is this data useful?**
+While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
+
+**Decision to Proceed:**
+Although the dataset did not fully meet all the ROCCC criteria, it was deemed suitable for exploratory analysis after thorough cleaning and validation, with the understanding that supplementary data should be considered for additional analysis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist:
@@ -74,13 +97,14 @@ To ensure data quality and integrity, the raw Fitbit data was evaluated using th
  
  **Original:** Yes because it was collected directly from the devices.
  
- **Comprehensive:** No. Missing key data like stress (which Bellabeat tracks).
+ **Comprehensive:** No. Missing key data like stress data (which Bellabeat tracks).
  
  **Current:** No. The data is from 2016.
  
 **Cited:** Yes. Publicly available on Kaggle.
 
 
+To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist. Although the dataset did not fully meet all the criteria, it was deemed suitable for exploratory analysis after thorough cleaning and validation, with the understanding that supplementary data should be considered for additional analysis.
 
 
 
@@ -130,5 +154,81 @@ To ensure data quality and integrity, the raw Fitbit data was evaluated using th
 
 
   
+
+Step 2: Merge Activity and Sleep Data (JOIN)
+Description: I used a LEFT JOIN to keep all the activity data intact, even on days when the user didn't record sleep.
+
+sql
+CREATE OR REPLACE TABLE `bellabeat_analysis.combined_activity_sleep` AS
+SELECT ... (your code here)
+Result: Successfully created a combined table with 457 rows.
+
+Where do the actual numbers (Results) go?
+They go in the Analyze phase.
+
+Here is exactly how your Analyze section should look. Copy and paste this whole block (I have filled in the numbers from your earlier screenshot so you don't have to guess):
+
+
+
+## 📊 4. Analyze
+
+I used Google BigQuery to run summary statistics on the combined activity and sleep dataset.
+
+### Overall Summary Statistics
+*Description: I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.*
+
+```sql
+SELECT 
+  COUNT(DISTINCT Id) AS unique_users,
+  ROUND(AVG(TotalSteps), 0) AS avg_daily_steps,
+  MAX(TotalSteps) AS max_daily_steps,
+  ROUND(AVG(Calories), 0) AS avg_daily_calories,
+  ROUND(AVG(TotalMinutesAsleep), 0) AS avg_sleep_minutes,
+  ROUND(AVG(SedentaryMinutes), 0) AS avg_sedentary_minutes
+FROM `bellabeat_analysis.combined_activity_sleep`;
+Results:
+
+unique_users	avg_daily_steps	max_daily_steps	avg_daily_calories	avg_sleep_minutes	avg_sedentary_minutes
+35	6547	28497	2189	444	995
+Insights:
+
+High Sedentary Time: Users spend an average of 995 minutes (16.5 hours) per day sedentary, compared to only a small fraction of time being highly active.
+
+Below Recommended Activity: The average daily steps (6,547) falls below the widely accepted 10,000-step goal, indicating room for fitness improvement.
+
+Adequate Sleep: Users average 7.4 hours of sleep per night (444 minutes), which is within the recommended 7-9 hour range.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Overall Summary Statistics
+*Description: I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.*
+
+```sql
+SELECT 
+  COUNT(DISTINCT Id) AS unique_users,
+  ROUND(AVG(TotalSteps), 0) AS avg_daily_steps,
+  MAX(TotalSteps) AS max_daily_steps,
+  ROUND(AVG(Calories), 0) AS avg_daily_calories,
+  ROUND(AVG(TotalMinutesAsleep), 0) AS avg_sleep_minutes,
+  ROUND(AVG(SedentaryMinutes), 0) AS avg_sedentary_minutes
+FROM `bellabeat_analysis.combined_activity_sleep`;
+
+
+
+
 
 
