@@ -149,7 +149,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 **Below Recommended Activity:** The average daily steps **(6,547)** falls below the widely accepted 10,000-step goal, indicating room for fitness improvement.
 
-**Adequate Sleep:** Users average 7.4 hours of sleep per night **(444 minutes)**, which is within the recommended 7-9 hour range.
+**Adequate Sleep:** Users spend an average of 7.4 hours of sleep per night **(444 minutes)**, which is within the recommended 7-9 hour range.
 
 
 
