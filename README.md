@@ -163,6 +163,7 @@ Link to [Tableau](https://public.tableau.com/views/BellabeatSmartDeviceUsageAnal
 
 I built an interactive Tableau dashboard to present these findings to the Bellabeat executive team. The dashboard synthesizes the SQL analysis into three key visualizations.
 
+![Bellabeat Dashboard](BellaBeat_dashboard_analysis.png)
 
 
 
