@@ -11,7 +11,7 @@
 This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, **Act**.
 
 
-❓**1. Ask**
+## 1. Ask
 
 🏢 **Business Scenario**
 
@@ -24,7 +24,7 @@ The company has therefore tasked its marketing analytics team with examining exi
 
 🎯 **Business Task**
 
-Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routinesG** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
+Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routines/calories burn** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
 
 
 
@@ -47,7 +47,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 **Secondary Stakeholder:** Bellabeat market analytics team, Customer Engagement and digital wellness teams.
 
 
-**2. Prepare**
+## 2. Prepare
 
 ### About the Dataset
 
@@ -71,96 +71,58 @@ To ensure data quality and integrity, the raw Fitbit data was evaluated using th
 **How is this data useful?**
 While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
 
-**Decision to Proceed:**
+
 Although the dataset did not fully meet all the ROCCC criteria, it was deemed suitable for exploratory analysis after thorough cleaning and validation, with the understanding that supplementary data should be considered for additional analysis.
 
 
 
+## 3. Process
 
+**Tools used:** Microsoft Excel (Power Query) and Google BigQuery (SQL).
 
+The data processing was completed in two main stages: initial cleaning in Excel, followed by merging in BigQuery. 
 
+### Step 1: Data Preparation in Excel (Power Query)
 
+Before uploading to BigQuery, I used Excel's Power Query to perform the following tasks in order to ensure consistency.
 
-
-
-
-
-
-
-
-
-
-  
-To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist:
-
- **Reliable:** Moderate. Data was self-reported via survey.
+1. I combined the `dailyActivity` and `sleepDay` .csv files from both the March-April and April-May folders into two tables.
  
- **Original:** Yes because it was collected directly from the devices.
- 
- **Comprehensive:** No. Missing key data like stress data (which Bellabeat tracks).
- 
- **Current:** No. The data is from 2016.
- 
-**Cited:** Yes. Publicly available on Kaggle.
+2. I formatted the `ActivityDate` and `SleepDay` columns into valid Date formats (resolving the `########` error in Excel).
+
+3. Removed duplicates user/day records to ensure data integrity
+
+4.  Saved the cleaned tables as .csv files (`daily_activity.csv` and `sleep_day.csv`) and imported them into Google Big Query.
 
 
-To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist. Although the dataset did not fully meet all the criteria, it was deemed suitable for exploratory analysis after thorough cleaning and validation, with the understanding that supplementary data should be considered for additional analysis.
+### Step 2: Checked for duplicates
+
+After uploading the data into Big Query, i ran some few queries to ensure there were no duplicate entries for the same user on the same day before joining the tables.
 
 
+```sql
+SELECT
+    Id, 
+  ActivityDate, 
+  COUNT(*) as duplicate_count
+FROM `bellabeat_analysis.daily_activity`
+GROUP BY Id, ActivityDate
+HAVING duplicate_count > 1;
+```
+**Results:** 0 rows found, meaning that the data is clean.
 
 
+### Step 3: Merged Activity and Sleep Data
 
-How is this data useful?
+I used a LEFT JOIN to combine the two tables into one table based on the User ID and Date. I used the **LEFT JOIN** so that I may not miss any of the daily activity records (like steps and calories) for the days where a user did not record sleep.
 
-While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
+To ensure the merge was successful, I ran a validation query to count the total number of rows in the new table.
 
+```sql
+SELECT COUNT(*) AS total_rows
+FROM `bellabeat_analysis.combined_activity_sleep`;
+```
 
-## Data Processing
-
-To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist; Reliable, Original, Comprehensive, Current, and Cited. Although the dataset did not fully meet all the criteria, it was deemed suitable for exploratory analysis after thorough cleaning and validation, with understanding that supplementary data should be considered for additional analysis.
-
-**Key cleaning steps**
-
-- Standardized column names for consistency and clarity.
-
-- Merged relevant .csv files by user ID and date.
-
-- Removed duplicate observations.
-
-- Converted data types for usability (e.g. datetime, factor, character, interger)
-
-- Filtered out records with insufficient data (e.g IDs with very few observations)
-
-
-**Key Validation Checks**
-
-- Reviewed distributions of activity and sleep variables at minute and daily levels.
-
-- Identified inconsistencies and gaps in user participation.
-
-- Verified logical ranges for durations, timestamps, and categorical labels.
-
-
-
-  **Business Task**
-
-  Bellabeat wants to explore how smart device data from non-Bellabeat users can reveal trends in **physical activity**, **calories burn**, and **sleep** that may provide data-driven recommendations to better support the unique health and wellness journeys of our customers.
-
-  
-
-
-
-  
-
-
-  
-
-Step 2: Merge Activity and Sleep Data (JOIN)
-Description: I used a LEFT JOIN to keep all the activity data intact, even on days when the user didn't record sleep.
-
-sql
-CREATE OR REPLACE TABLE `bellabeat_analysis.combined_activity_sleep` AS
-SELECT ... (your code here)
 Result: Successfully created a combined table with 457 rows.
 
 Where do the actual numbers (Results) go?
