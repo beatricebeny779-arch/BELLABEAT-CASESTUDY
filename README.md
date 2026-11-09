@@ -4,16 +4,16 @@
 
 **Author:** Beatrice Benson
 
-**Tools:** Google BigQuery, SQL, Microsoft Excel, Power Query and GitHub
+**Tools:** Google BigQuery, SQL, Microsoft Excel, Power Query and Tableau.
 
 ---
 
 This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, **Act**.
 
 
-## 1. Ask
+## 1. Ask ❓
 
-🏢 **Business Scenario**
+ **Business Scenario**
 
 Bellabeat is a health-focused technology company that develops smart wellness products designed to help individuals monitor and improve aspects of their health and daily activities.
 
@@ -22,14 +22,15 @@ As the company seeks to expand its market presence, its leadership team wants to
 The company has therefore tasked its marketing analytics team with examining existing smart-device usage data to identify behavioural trends and develop actionable business recommendations.
 
 
-🎯 **Business Task**
+
+
+**Problem Statement(Business Task)**
 
 Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routines/calories burn** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
 
 
 
-
-❔ **Key Business Questions**
+**Key Business Questions**
 
 1. What are some trends in smart device usage?
    
@@ -38,8 +39,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 3. How could these trends help influence Bellabeat marketing strategy?  
 
 
-
-👥 **Stakeholders**
+**Stakeholders**
 
 
 **Primary Stakeholders:** Bellabeat Executive team, Product Development team.
