@@ -159,23 +159,31 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 ## 5. SHARE 
 
+I built an interactive Tableau dashboard to present these findings to the Bellabeat executive team. The dashboard synthesizes the SQL analysis into three key visualizations.
+
 Link to [Tableau](https://public.tableau.com/views/BellabeatSmartDeviceUsageAnalysis_17942557277620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-I built an interactive Tableau dashboard to present these findings to the Bellabeat executive team. The dashboard synthesizes the SQL analysis into three key visualizations.
+Bellow is the dashboard showing average steps by day, the correlation between steps and sleep, and the daily time breakdown.
 
 ![Bellabeat Dashboard](BellaBeat_dashboard_analysis.png)
 
 
+**Observations**
+
+**1. Average Steps by Day of the Week(top left):** Users are the most active on Saturdays and Wednesdays, but they are the least active on Tuesdays. This pattern suggests that people are using their devices mostly for weekend activities (Saturday) or mid-week exercise (Wednesday), but they are much less active on a typical workday (Tuesday).
+
+**2. High sedentary lifestyle(bottom left):** Users spend an average of 995 minutes (over 16 hours) per day sedentary. This suggests that while users care about their health, their daily routines are overwhelmingly inactive.
+
+**3. Correlation between steps and sleep (top right):** There is a negative relationship between the number of steps taken and the total minutes of sleep. In this dataset, users who walked the most had less slight sleep.
 
 
+## Act
 
+**1. Focus on sleep quality:** Bellabeat should market its app's sleep tracking rather than just promoting step goals.
+   
+**2. Introduce movement reminders:** With users spending over 16 hours a day sedentary, Bellabeat could launch a feature that reminds users to stand up and move throughout the day, directly addressing this health risk.
 
-
-
-
-
-
-
+**3. Target Mid-Week Engagement:** Since Tuesday shows the lowest activity levels, Bellabeat could launch a mid-week movement challenge or to keep users engaged when their motivation dips.
 
 
 
