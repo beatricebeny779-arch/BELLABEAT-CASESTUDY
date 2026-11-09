@@ -146,15 +146,13 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 |------------|---------------|---------------|------------------|-----------------|---------------------|
 |    35      |     6547      |    28497      |      2189        |     444         |        995          |
 
-unique_users	avg_daily_steps	max_daily_steps	avg_daily_calories	avg_sleep_minutes	avg_sedentary_minutes
-35	6547	28497	2189	444	995
-Insights:
+**Insights:**
 
-High Sedentary Time: Users spend an average of 995 minutes (16.5 hours) per day sedentary, compared to only a small fraction of time being highly active.
+**1. High Sedentary Time:** Users spend an average of **995 minutes (16.5 hours)** per day sedentary, compared to only a small fraction of time being highly active.
 
-Below Recommended Activity: The average daily steps (6,547) falls below the widely accepted 10,000-step goal, indicating room for fitness improvement.
+**Below Recommended Activity:** The average daily steps **(6,547)** falls below the widely accepted 10,000-step goal, indicating room for fitness improvement.
 
-Adequate Sleep: Users average 7.4 hours of sleep per night (444 minutes), which is within the recommended 7-9 hour range.
+**Adequate Sleep:** Users average 7.4 hours of sleep per night **(444 minutes)**, which is within the recommended 7-9 hour range.
 
 
 
@@ -172,18 +170,6 @@ Adequate Sleep: Users average 7.4 hours of sleep per night (444 minutes), which 
 
 
 
-### Overall Summary Statistics
-*Description: I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.*
-
-```sql
-SELECT 
-  COUNT(DISTINCT Id) AS unique_users,
-  ROUND(AVG(TotalSteps), 0) AS avg_daily_steps,
-  MAX(TotalSteps) AS max_daily_steps,
-  ROUND(AVG(Calories), 0) AS avg_daily_calories,
-  ROUND(AVG(TotalMinutesAsleep), 0) AS avg_sleep_minutes,
-  ROUND(AVG(SedentaryMinutes), 0) AS avg_sedentary_minutes
-FROM `bellabeat_analysis.combined_activity_sleep`;
 
 
 
