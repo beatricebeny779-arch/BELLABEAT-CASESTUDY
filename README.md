@@ -13,7 +13,7 @@ This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, 
 
 ## 1. Ask ❓
 
- **Business Scenario**
+### Business Scenario
 
 Bellabeat is a health-focused technology company that develops smart wellness products designed to help individuals monitor and improve aspects of their health and daily activities.
 
@@ -24,7 +24,7 @@ The company has therefore tasked its marketing analytics team with examining exi
 
 
 
-**Problem Statement(Business Task)**
+### Problem Statement(Business Task)
 
 Analyze smart-device usage data from Fitbit users to identify patterns in **physical activity**, **daily routines/calories burn** and **sleep behaviour** and provide data-driven marketing recommendations for Bellabeat.
 
@@ -58,9 +58,7 @@ This project uses publicly available data collected from 30 Fitbit users via an 
 
 - License: [CCO: Public Domain](https://www.kaggle.com/arashnic) through Mobius.
 
-- **Limitations:** The dataset is small (30 users), lacks demographic data (age, gender), and represents a short timeframe.
-
-**ROCCC Assessment**
+### ROCCC Assessment
 To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist:
 *   **Reliable:** Moderate. Data was self-reported via survey.
 *   **Original:** Yes. It was collected directly from the devices.
@@ -68,12 +66,11 @@ To ensure data quality and integrity, the raw Fitbit data was evaluated using th
 *   **Current:** No. The data is from 2016.
 *   **Cited:** Yes. Publicly available on Kaggle.
 
-**How is this data useful?**
-While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
-
-
 Although the dataset did not fully meet all the ROCCC criteria, it was deemed suitable for exploratory analysis after thorough cleaning and validation, with the understanding that supplementary data should be considered for additional analysis.
 
+**How is this data useful?**
+
+While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
 
 
 ## 3. Process
