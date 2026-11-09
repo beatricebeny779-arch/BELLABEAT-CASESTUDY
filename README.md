@@ -159,7 +159,13 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 ## 5. SHARE 
 
+[Link to Tableau](https://public.tableau.com/views/BellabeatSmartDeviceUsageAnalysis_17942557277620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 I built an interactive Tableau dashboard to present these findings to the Bellabeat executive team. The dashboard synthesizes the SQL analysis into three key visualizations.
+
+
+
+
 
 
 
