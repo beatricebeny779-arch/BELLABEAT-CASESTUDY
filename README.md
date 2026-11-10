@@ -1,6 +1,6 @@
-## 🌿BELLABEAT-CASESTUDY 
+### 🌿BELLABEAT-CASESTUDY 
 
-**Google Data Analytics Professional Certificate: Capstone Project**
+**Google Data Analytics Professional Certificate:** Capstone Project
 
 **Author:** Beatrice Benson
 
@@ -8,7 +8,7 @@
 
 ---
 
-## Table of Contents
+### Table of Contents
 
 [Ask](#1-ask-)
 
@@ -35,7 +35,8 @@
 This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, **Act**.
 
 
-## 1. Ask ❓
+### 1. Ask ❓
+
 
 ### Business Scenario
 
@@ -54,7 +55,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 
 
-**Key Business Questions**
+### Key Business Questions
 
 1. What are some trends in smart device usage?
    
@@ -63,7 +64,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 3. How could these trends help influence Bellabeat marketing strategy?  
 
 
-**Stakeholders**
+### Stakeholders
 
 
 **Primary Stakeholders:** Bellabeat Executive team, Product Development team.
@@ -72,9 +73,9 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 
 
-## 2. Prepare 📓
+### 2. Prepare 📓
 
-### About the Dataset
+#### About the Dataset
 
 
 This project uses publicly available data collected from 30 Fitbit users via an Amazon Mechanical Turk survey between March 12 and May 12, 2016. The dataset was made available by Mobius On Kaggle for educational and non-commercial analysis.
@@ -83,7 +84,7 @@ This project uses publicly available data collected from 30 Fitbit users via an 
 
 - License: [CCO: Public Domain](https://www.kaggle.com/arashnic) through Mobius.
 
-### ROCCC Assessment
+#### ROCCC Assessment
 To ensure data quality and integrity, the raw Fitbit data was evaluated using the ROCCC checklist:
 *   **Reliable:** Moderate. Data was self-reported via survey.
 *   **Original:** Yes. It was collected directly from the devices.
@@ -99,7 +100,7 @@ While the data does not come from Bellabeat devices, it offers valuable insight 
 
 
 
-## 3. Process 
+### 3. Process 
 
 **Tools used:** Microsoft Excel (Power Query) and Google BigQuery (SQL).
 
@@ -149,7 +150,7 @@ Result: Successfully created a combined table with 457 rows.
 
 
 
-## 4. Analyze 📈
+### 4. Analyze 📈
 
 I used Google Big Query to run summary statistics on the combined activity and sleep dataset. I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.
 
@@ -182,7 +183,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 
 
-## 5. Share 🔗
+### 5. Share 🔗
 
 
 **Tools:** Tableau
@@ -211,7 +212,7 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 
 
-## 6. Act 💡
+### 6. Act 💡
 
 
 Based on the findings, below are the recommendations to the Bellabeat Company.
@@ -230,7 +231,7 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 
 
 
-## 7. Limitations 🛑
+### 7. Limitations 🛑
 
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
@@ -248,7 +249,7 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 
 
 
-## 8. Project Summary
+### 8. Project Summary
 
 
 This project analyzed Fitbit smart device data to uncover trends in physical activity and sleep, providing high-level marketing recommendations for Bellabeat. The data revealed that while users are tracking their health, they spend over **16 hours a day sedentary**. Additionally, there is a **negative relationship** between steps and sleep, meaning more steps did not lead to better sleep in this dataset.
@@ -256,7 +257,7 @@ This project analyzed Fitbit smart device data to uncover trends in physical act
 
 
 
-## 9. References 📚
+### 9. References 📚
 
 *[Kaggle dataset](https://www.kaggle.com/datasets/arashnic/fitbit)*
 
