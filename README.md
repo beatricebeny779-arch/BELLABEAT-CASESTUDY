@@ -8,6 +8,25 @@
 
 ---
 
+## Table of Contents
+
+[Ask](#1-ask-)
+
+[Prepare](#2-prepare-)
+
+[Process](#3-process-)
+
+[Analyze](#4-analyze-)
+
+[Share](#5-share-)
+
+[Act](#6-act-)
+
+
+
+
+
+
 This Analysis follows the six step analysis; **Ask**, **Prepare**, **Process**, **Analyze**, **Share**, **Act**.
 
 
@@ -47,7 +66,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 **Secondary Stakeholder:** Bellabeat market analytics team, Customer Engagement and digital wellness teams.
 
 
-## 2. Prepare
+## 2. Prepare 📓
 
 ### About the Dataset
 
@@ -73,7 +92,7 @@ Although the dataset did not fully meet all the ROCCC criteria, it was deemed su
 While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
 
 
-## 3. Process
+## 3. Process ⚙️
 
 **Tools used:** Microsoft Excel (Power Query) and Google BigQuery (SQL).
 
@@ -123,7 +142,7 @@ Result: Successfully created a combined table with 457 rows.
 
 
 
-## 4. Analyze
+## 4. Analyze 📈
 
 I used Google Big Query to run summary statistics on the combined activity and sleep dataset. I calculated the average steps, calories, sleep, and sedentary time across all users to understand general behavior.
 
@@ -154,7 +173,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 
 
-## 5. Share
+## 5. Share 🔗
 
 **Tools:** Tableau
 
@@ -176,7 +195,7 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 **3. Correlation between steps and sleep (top right):** There is a negative relationship between the number of steps taken and the total minutes of sleep. In this dataset, users who walked the most had less slight sleep.
 
 
-## 6. Act
+## 6. Act 💡
 
 Based on the findings, below are the recommendations to the Bellabeat Company.
 
@@ -190,9 +209,13 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 ## 7. Limitations
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
+ 
  **2. Lack of Demographics:** The dataset does not include age, gender, location, or income. This makes it impossible to understand the categories of each user.
+ 
 **3. Outdated Data:** The data was collected in 2016 (March - May). Smart device usage and fitness features might have been updated by now.
+
 **4. Missing Health Metrics:** Bellabeat products focus heavily on stress, menstrual cycles, and mindfulness. This dataset only tracks steps, calories, and sleep, which limits our ability to offer recommendations on Bellabeat's core wellness features.
+
 **Self-Reported Data:** The data was collected via an Amazon Mechanical Turk survey, meaning users opted in to share their data. This can introduce bias, as these users may be more health-conscious than the average person.
 
 ---
