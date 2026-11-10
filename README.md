@@ -105,7 +105,7 @@ While the data does not come from Bellabeat devices, it offers valuable insight 
 
 The data processing was completed in two main stages: initial cleaning in Excel, followed by merging in BigQuery. 
 
-### Step 1: Data Preparation in Excel (Power Query)
+#### Step 1: Data Preparation in Excel (Power Query)
 
 Before uploading to BigQuery, I used Excel's Power Query to perform the following tasks in order to ensure consistency.
 
@@ -118,7 +118,7 @@ Before uploading to BigQuery, I used Excel's Power Query to perform the followin
 4.  Saved the cleaned tables as .csv files (`daily_activity.csv` and `sleep_day.csv`) and imported them into Google Big Query.
 
 
-### Step 2: Checked for duplicates
+#### Step 2: Checked for duplicates
 
 After uploading the data into Big Query, i ran some few queries to ensure there were no duplicate entries for the same user on the same day before joining the tables.
 
@@ -135,7 +135,7 @@ HAVING duplicate_count > 1;
 **Results:** 0 rows found, meaning that the data is clean.
 
 
-### Step 3: Merged Activity and Sleep Data
+#### Step 3: Merged Activity and Sleep Data
 
 I used a LEFT JOIN to combine the two tables into one table based on the User ID and Date. I used the **LEFT JOIN** so that I may not miss any of the daily activity records (like steps and calories) for the days where a user did not record sleep.
 
