@@ -26,6 +26,8 @@
 
 [Project Summary](#8-project-sumary-)
 
+[References](#9-references-)
+
 
 
 
@@ -253,7 +255,7 @@ This project analyzed Fitbit smart device data to uncover trends in physical act
 
 ---
 
-## Data Sources & References
+## 9. References 📚
 
 [Kaggle dataset](https://www.kaggle.com/datasets/arashnic/fitbit)
 
