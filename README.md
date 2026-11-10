@@ -22,6 +22,8 @@
 
 [Act](#6-act-)
 
+[Limitations](#7-limitations-)
+
 
 
 
@@ -65,6 +67,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 **Secondary Stakeholder:** Bellabeat market analytics team, Customer Engagement and digital wellness teams.
 
+---
 
 ## 2. Prepare 📓
 
@@ -91,6 +94,7 @@ Although the dataset did not fully meet all the ROCCC criteria, it was deemed su
 
 While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
 
+---
 
 ## 3. Process ⚙️
 
@@ -140,7 +144,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 ```
 Result: Successfully created a combined table with 457 rows.
 
-
+---
 
 ## 4. Analyze 📈
 
@@ -166,11 +170,13 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 **1. High Sedentary Time:** Users spend an average of **995 minutes (16.5 hours)** per day sedentary, compared to only a small fraction of time being highly active.
 
+
 **Below Recommended Activity:** The average daily steps **(6,547)** falls below the widely accepted 10,000-step goal, indicating room for fitness improvement.
+
 
 **Adequate Sleep:** Users spend an average of 7.4 hours of sleep per night **(444 minutes)**, which is within the recommended 7-9 hour range.
 
-
+---
 
 
 ## 5. Share 🔗
@@ -190,23 +196,31 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 **1. Average Steps by Day of the Week(top left):** Users are the most active on Saturdays and Wednesdays, but they are the least active on Tuesdays. This pattern suggests that people are using their devices mostly for weekend activities (Saturday) or mid-week exercise (Wednesday), but they are much less active on a typical workday (Tuesday).
 
+
+
 **2. High sedentary lifestyle(bottom left):** Users spend an average of 995 minutes (over 16 hours) per day sedentary. This suggests that while users care about their health, their daily routines are overwhelmingly inactive.
+
+
 
 **3. Correlation between steps and sleep (top right):** There is a negative relationship between the number of steps taken and the total minutes of sleep. In this dataset, users who walked the most had less slight sleep.
 
+---
 
 ## 6. Act 💡
 
 Based on the findings, below are the recommendations to the Bellabeat Company.
 
 **1. Focus on sleep quality:** Bellabeat should market its app's sleep tracking rather than just promoting step goals.
+
    
 **2. Introduce movement reminders:** With users spending over 16 hours a day sedentary, Bellabeat could launch a feature that reminds users to stand up and move throughout the day, directly addressing this health risk.
 
+
 **3. Target Mid-Week Engagement:** Since Tuesday shows the lowest activity levels, Bellabeat could launch a mid-week movement challenge or to keep users engaged when their motivation dips.
 
+---
 
-## 7. Limitations
+## 7. Limitations 🛑
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
  
