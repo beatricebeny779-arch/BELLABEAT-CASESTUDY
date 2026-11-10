@@ -24,7 +24,7 @@
 
 [Limitations](#7-limitations-)
 
-[Project Summary](#8-project-sumary)
+[Project Summary](#8-project-summary)
 
 [References](#9-references-)
 
