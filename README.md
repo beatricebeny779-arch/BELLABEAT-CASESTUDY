@@ -24,6 +24,7 @@
 
 [Limitations](#7-limitations-)
 
+[Project Summary](#8-project-sumary-)
 
 
 
@@ -67,7 +68,7 @@ Analyze smart-device usage data from Fitbit users to identify patterns in **phys
 
 **Secondary Stakeholder:** Bellabeat market analytics team, Customer Engagement and digital wellness teams.
 
----
+
 
 ## 2. Prepare 📓
 
@@ -94,7 +95,7 @@ Although the dataset did not fully meet all the ROCCC criteria, it was deemed su
 
 While the data does not come from Bellabeat devices, it offers valuable insight into real-world behavior among smart-tech users.
 
----
+
 
 ## 3. Process ⚙️
 
@@ -144,7 +145,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 ```
 Result: Successfully created a combined table with 457 rows.
 
----
+
 
 ## 4. Analyze 📈
 
@@ -176,7 +177,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 **Adequate Sleep:** Users spend an average of 7.4 hours of sleep per night **(444 minutes)**, which is within the recommended 7-9 hour range.
 
----
+
 
 
 ## 5. Share 🔗
@@ -208,33 +209,44 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 ## 6. Act 💡
 
+
 Based on the findings, below are the recommendations to the Bellabeat Company.
 
+
 **1. Focus on sleep quality:** Bellabeat should market its app's sleep tracking rather than just promoting step goals.
+
 
    
 **2. Introduce movement reminders:** With users spending over 16 hours a day sedentary, Bellabeat could launch a feature that reminds users to stand up and move throughout the day, directly addressing this health risk.
 
 
+
 **3. Target Mid-Week Engagement:** Since Tuesday shows the lowest activity levels, Bellabeat could launch a mid-week movement challenge or to keep users engaged when their motivation dips.
 
----
+
+
+
 
 ## 7. Limitations 🛑
+
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
  
  **2. Lack of Demographics:** The dataset does not include age, gender, location, or income. This makes it impossible to understand the categories of each user.
  
+ 
 **3. Outdated Data:** The data was collected in 2016 (March - May). Smart device usage and fitness features might have been updated by now.
+
 
 **4. Missing Health Metrics:** Bellabeat products focus heavily on stress, menstrual cycles, and mindfulness. This dataset only tracks steps, calories, and sleep, which limits our ability to offer recommendations on Bellabeat's core wellness features.
 
+
 **Self-Reported Data:** The data was collected via an Amazon Mechanical Turk survey, meaning users opted in to share their data. This can introduce bias, as these users may be more health-conscious than the average person.
 
----
 
-## 8. Project Summary
+
+## 8. Project Summary 🗒️
+
 
 This project analyzed Fitbit smart device data to uncover trends in physical activity and sleep, providing high-level marketing recommendations for Bellabeat. The data revealed that while users are tracking their health, they spend over **16 hours a day sedentary**. Additionally, there is a **negative relationship** between steps and sleep, meaning more steps did not lead to better sleep in this dataset.
 
