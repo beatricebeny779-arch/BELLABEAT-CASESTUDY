@@ -14,7 +14,7 @@
 
 [Prepare](#2-prepare-)
 
-[Process](#3-process-)
+[Process](#3-process)
 
 [Analyze](#4-analyze-)
 
@@ -99,7 +99,7 @@ While the data does not come from Bellabeat devices, it offers valuable insight 
 
 
 
-## 3. Process ⚙️
+## 3. Process 
 
 **Tools used:** Microsoft Excel (Power Query) and Google BigQuery (SQL).
 
