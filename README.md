@@ -184,6 +184,7 @@ FROM `bellabeat_analysis.combined_activity_sleep`;
 
 ## 5. Share 🔗
 
+
 **Tools:** Tableau
 
 I built an interactive Tableau dashboard to present these findings to the Bellabeat executive team. The dashboard synthesizes the SQL analysis into three key visualizations.
@@ -209,6 +210,10 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 
 
+
+
+
+
 ## 6. Act 💡
 
 
@@ -229,7 +234,15 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 
 
 
+
+
+
+
+
 ## 7. Limitations 🛑
+
+
+
 
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
