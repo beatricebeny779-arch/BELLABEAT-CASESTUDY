@@ -211,9 +211,6 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 
 
-
-
-
 ## 6. Act 💡
 
 
@@ -233,16 +230,7 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 
 
 
-
-
-
-
-
-
 ## 7. Limitations 🛑
-
-
-
 
 
  **1. Small Sample Size:** The dataset only contains data from 30 to 35 users. This is too small to be representative of the general population or Bellabeat's entire customer base.
@@ -270,9 +258,9 @@ This project analyzed Fitbit smart device data to uncover trends in physical act
 
 ## 9. References 📚
 
-[Kaggle dataset](https://www.kaggle.com/datasets/arashnic/fitbit)
+*[Kaggle dataset](https://www.kaggle.com/datasets/arashnic/fitbit)*
 
-Google Data Analytics Professional Certificate: Capstone Project
+*Google Data Analytics Professional Certificate: Capstone Project*
 
 
 
