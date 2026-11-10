@@ -207,7 +207,7 @@ Bellow is the dashboard showing average steps by day, the correlation between st
 
 **3. Correlation between steps and sleep (top right):** There is a negative relationship between the number of steps taken and the total minutes of sleep. In this dataset, users who walked the most had less slight sleep.
 
----
+
 
 ## 6. Act 💡
 
@@ -253,7 +253,7 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 This project analyzed Fitbit smart device data to uncover trends in physical activity and sleep, providing high-level marketing recommendations for Bellabeat. The data revealed that while users are tracking their health, they spend over **16 hours a day sedentary**. Additionally, there is a **negative relationship** between steps and sleep, meaning more steps did not lead to better sleep in this dataset.
 
 
----
+
 
 ## 9. References 📚
 
