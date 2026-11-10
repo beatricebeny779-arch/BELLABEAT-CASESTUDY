@@ -24,7 +24,7 @@
 
 [Limitations](#7-limitations-)
 
-[Project Summary](#8-project-sumary-)
+[Project Summary](#8-project-sumary)
 
 [References](#9-references-)
 
@@ -247,7 +247,7 @@ Based on the findings, below are the recommendations to the Bellabeat Company.
 
 
 
-## 8. Project Summary 🗒️
+## 8. Project Summary
 
 
 This project analyzed Fitbit smart device data to uncover trends in physical activity and sleep, providing high-level marketing recommendations for Bellabeat. The data revealed that while users are tracking their health, they spend over **16 hours a day sedentary**. Additionally, there is a **negative relationship** between steps and sleep, meaning more steps did not lead to better sleep in this dataset.
